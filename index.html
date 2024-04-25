@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home Page
+        </title>
+        <style>
+            .body{
+                height: 100%;
+                background-color: #280274;
+
+            }
+            .bg{
+              background-color: rgba(0, 0, 0, 0.9);}
+            .row1{
+                height: 20%;
+                 font-size: 50px;
+                text-align: center;
+                color: yellow;
+                font-style: italic;
+            }
+            h2{
+                color: rgb(233, 126, 233);
+                font-style: oblique;
+                font-size: 35px;
+                font-weight: bolder;
+            }
+            p1{
+                font-style: normal;
+                color:white;
+                font-size:25px;
+                
+            }
+            p2{
+                font-style: normal;
+                color: white;
+                font-size:25px;
+            
+            }
+            h1{
+                
+                color: rgb(233, 126, 233) ;
+                font-style: oblique;
+                font-size: 35px;
+                font-weight: bolder;
+                
+            }
+            h3{
+                color: orange;
+                font-size: 25px;
+                padding-left: 70px;
+            }
+            fieldset{
+                border-radius: 40px;
+                border-style:double; 
+            border-width: 20px;      }
+            .list1{
+                color: rgb(48, 227, 12);
+                font-size: 25px;
+            }
+            .list2{
+                color: orange;
+                font-size: 25px;
+            }
+            p3{
+                color: orange;
+                font-style:normal;
+                font-size: 25px;
+            }
+            #img{
+                width: 50%;
+                display: block;
+                margin: auto;
+                border-radius: 20px;
+            }
+            .list3{
+                color: white;
+                font-size: 25px;
+            }
+            .navbar ul{
+                list-style: none;
+                background-image: linear-gradient(to right,black,tomato,yellow);
+                padding: 0;
+                text-align: center;
+                margin: 0;
+            }
+            .navbar li{
+                display: inline-block;
+            }
+            .navbar a{
+                text-decoration: none;
+                color: white;
+                width: 1oopx;
+                display: block;
+                padding: 25px 20px;
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+            }
+            .navbar a:hover{
+                background: black;
+            }
+            .images{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                padding: 8px;
+                background: linear-gradient(135deg,red,blue 50%,white 50%);
+                background-size: 250%;
+            }
+            ::-webkit-scrollbar{
+                background:rgba(0, 0, 0, 0.751) ;
+                width: 0;
+            }
+            p4{
+                color: red;
+            }
+        </style>
+    </head>
+    <body class="bg">
+            <div class="row1">
+                Attendance Monitoring System
+            </div>
+            <div class="navbar">
+                <ul class="row2">
+                    <li><a href="about-us.html" target="blank_1">About us</a></li>
+                    <li><a href="https://github.com/hitesh-mulwani?tab=repositories" target="blank_3">Source code</a></li>
+                    <li><a href="https://scanattend.000webhostapp.com/login.php" target="blank_2">Main Project</a></li>
+                </ul>
+            </div>
+            
+        <fieldset>
+            <h1><u>
+                Contents</u>
+            </h1>
+            <ul type="disc" >
+                <li class="list1">Overview</li>
+                <li class="list1">features</li>
+                <li class="list1">Functionality Performed by users</li>
+                <li class="list1">Hardware Components Required</li>
+                <li class="list1">Software Required</li>
+                <li class="list1">Technology Used in RFID attendance System Using NodeMCU</li>
+                <li class="list1">RFID Based Attendance System Network Topology</li>
+                <li class="list1">RFID RC522 Module</li>
+                <li class="list1">Specifications & Pin Details</li>
+                <li class="list1">Interfacing RFID RC522 with NodeMcu ESP8266 Module</li>
+                <li class="list1">How to run a server?</li>
+                <li class="list1">Deploying our PHP Web App</li>
+                <li class="list1">Setting Up Arduino IDE for NodeMCU ESP8266</li>
+                <li class="list1">Selecting Port and Board</li>
+                <li class="list1">Conclusion</li>
+                
+            </ul>
+        </fieldset>
+        
+        <ul type="disc">
+            <li><h2><u>Overview</u></h2>
+                <ul>
+                    <li>
+                        <p1># The RFID based attendance system is developed using PHP, CSS, and Javascript. An RFID Based Attendance System Using NodeMCU is a modern attendance system. Hence, is a very interesting project. It can be useful in different places like schools, Colleges, industry and private organizations to register the attendance of students, teachers, employees, etc. to tabulate monthly/daily working hours automatically. When the person with the correct RFID card swipes his/her RFID tag, His/Her arrival time will be stored in system Log. Usually, when the same person swipes his/her RFID tag again, the system will save it as his/her leaving time.</p1><br><br>
+                        <img id="img" src="Images/RFID-Attenance-system.jpg" class="images" height="300px">
+                            <li><p1 ># The RFID attendance system is developed with the IoT platform. We have used  NodeMCU ESP8266 ESP8266 development board with MF-RC522 Module to send the card UID to the PHP Web app and store data into the website database. Basically, the admin plays an important role in the management of this system.</p1>
+                        </li>
+                    </li>
+                </ul>
+            </li>
+            <li><h2><u>Features</u></h2>
+                <ul>
+                    <li  class="list1"><p1>Secured Login System</p1></li>
+                    <li class="list1"><p1>Admin Panel</p1></li>
+                    <li class="list1"><p1>User Entry Log</p1></li>
+                    <li class="list1"><p1>User Management System</p1></li>
+                    <li class="list1"><p1>Multiple Device Management System</p1></li>
+                    <li class="list1"><p1>Filter the Log Data by Date, Time-In, Time-Out, and Department</p1></li>
+                    <li class="list1"><p1>Export those filtered data to Excel</p1></li>
+                </ul>
+            </li>
+            <li><h2><u>Functionality Performed by users </u></h2>
+                <ul><li><p1># Now, talking about the features of the RFID based attendance system using NodeMCU.The home page displays the admin login page. Unless You login to the system, you won’t be able to browse other available options. Hence the system is secured. Basically, the design of the RFID attendance system project is pretty simple. Hence the user won’t find any difficulties while enrolling his/her attendance. The user needs to swipe his/her card or a keychain to maintain attendance that includes the entry time as well. The major functions provided to admin are mentioned below:</p1>
+                </li></ul><br><br>
+                <img id="img" class="images" src="Images/RFID-Based-Attenance-System-Using-NodeMCU-Admin-Panel.png" height="400px"><br><br>
+                <center><i><ul><li class="list1" type="square"><u>Admin Login/Logout System</u></li>
+                    <li class="list1" type="square"><u>Forgot Password for admin</u></li>
+                    <li class="list1" type="square"><u>Edit and Update admin profile</u></li>
+                </ul></center></i><br><br>
+                <img id="img" class="images" src="Images/RFID-Based-Attenance-System-Using-NodeMCU-Admin-account-reset.png" height="400px"><br><br>
+                <ul><li class="list1" type="square"><p2> <center><i><u>Reset Admin Account Password</u></i></center></p2></li></ul><br><br>
+                <img id="img" class="images" src="Images/RFID-Based-Attenance-System-Using-NodeMCU-Users.png" height="400px"><br><br>
+                <ul><li class="list1" type="square"><center><i><u>View and Manage Users</u></i></center></li></ul>
+                <ul><br><br>
+                    <center><li class="list2">-View users</li>
+                    <li class="list2">-Add New User</li>
+                    <li class="list2">-Edit and update the existing users</li>
+                    <li class="list2">-Remove Users</li></center>
+                </ul>
+                <img id="img" class="images" src="Images/Manages-Users-for-RFID-Based-Attenance-System-Using-NodeMCU.png" height="400px" ><br><br>
+                <ul><li class="list1" type="square"><center><i><u>User Management system</u></i></center></li></ul>
+                <br><br>
+                <p3>-From the admin panel, the admin can enroll new users, update and remove users from the user management system. Further, the admin can view all the attendance records.
+                </p3><br><br>
+                <img id="img" class="images" src="Images/User-Manager-on-RFID-Based-Attenance-System-Using-NodeMCU.png" height="400px"><br><br>
+                <ul><li class="list1" type="square"><center><i><u>Enroll New Users/Update/Remove</u></i></center></li></ul>
+                <br><br>
+                <img id="img"  class="images" src="Images/device management system.png" height="400px"><br><br>
+                <ul><li class="list1" type="square"><center><i><u>Device Management System</u></i></center></li></ul>
+                <br><br>
+                <ul><br><br>
+                    <center><li class="list2">-Add new device</li>
+                    <li class="list2">-Update existing device</li>
+                    <li class="list2">-Delete device</li>
+                    <li class="list2">-Update New token to the device</li>
+                    <li class="list2">-Change the device mode (Enrollment mode: to register new users to the system, Attendance Mode: To record attendance of registered users)</li>
+                    </center>
+                </ul><br><br>
+                <img id="img"  class="images" src="Images/addd-new-device.png" height="400px"><br><br>
+                <ul><li class="list1" type="square"><center><i><u>Add New RFID Scanner Device</u></i></center></li></ul>
+                <br><br>
+                <ul><li><p1># Actually, from the devices section admin can add a new device, update the device, and remove the device. To add a new device you need to enter a device name and its department. Furthermore, you can also update the device token from the device UID Section.</p1>
+                </li></ul><br><br>
+                <img id="img"  class="images" src="Images/view users log.png" height="400px" ><br><br>
+                <ul><li class="list1" type="square"><center><i><u>View Users log on RFID Based Attenance System</u></i></center></li></ul>
+                <br><br>
+                <ul><li><p1># From the user log menu, you can navigate to all the user’s logs data. You can view their arrival and Leaving time as well. Furthermore, It has more functions to filter your logs by user, date, arrival time, leaving time, and filter by different departments, etc. Hence, you can also export those data to excel.</p1>
+                </li></ul><br><br>
+                <img id="img"  class="images" src="Images/Filter-Users-Log-on-RFID-Based-Attenance-System-Using-NodeMCU.png" height="400px"><br><br>
+                <ul><li class="list1" type="square"><center><i><u>Filter Users Log to export</u></i></center></li></ul>
+                <br><br>
+            </li>
+            <li><h2><u>Hardware Components Required</u></h2>
+                <table border="10" align="center" bgcolor="aqua" cellpadding="10" cellspacing="6" height="200" width="1000">
+                    <thead >
+                        <tr align="center">
+                            <th>S.N</th>
+                            <th>COMPONENTS NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>QUANTITY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center">
+                            <td>1.</td>
+                            <td>NodeMCU</td>
+                            <td> ESP8266 12E Board</td>
+                            <td>1</td>
+                        </tr>
+                        <tr align="center">
+                            <td>2.</td>
+                            <td>RFID Module</td>
+                            <td>RFID-RC522 Module</td>
+                            <td>1</td>
+                        </tr>
+                        <tr align="center">
+                            <td>3.</td>
+                            <td>Jumper Wires</td>
+                            <td>Male to Male Jumper Wires</td>
+                            <td>4</td>
+                        </tr>
+                        <tr align="center">
+                            <td>4.</td>
+                            <td>Breadboard</td>
+                            <td>Solderless Breadboard MIni</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li><h2><u>Software Required</u></h2>
+                <ul><br><br>
+                    <li class="list2">Arduino IDE</li>
+                    <li class="list2">XAMPP server</li>
+                    <li class="list2">PHP Source Code</li>
+                    <li class="list2">RFID-RC522 Library</li>
+                    <li class="list2">NodeMcu ESP8266 Library and Board Manager</li>
+                </ul><br><br>
+            </li>
+            <li><h2><u>Technology Used in RFID attendance System Using NodeMCU</u></h2>
+                <ul><li><p1>-Here we are listing all the major required software components for this project to develop the user interface.</p1>
+                </li></ul><br><br>
+                <ol>
+                    <li class="list3"><i><u>Embedded C:</u></i><br>  All the hardware interface coding has been done in embedded C Language.</li>
+                    <li class="list3"><i><u>PHP:</u></i>  <br> All the Logics and web interface is written in PHP Language.</li>
+                    <li class="list3"><i><u>MYSQL:</u></i><br>   For database, MYSQL Database is used</li>
+                    <li class="list3"><i><u>Apache 2:</u></i> <br> To run the web interface over the Apache 2 server.</li>
+                    <li class="list3"><i><u>Javascript and CSS:</u></i> <br> To Style web Interface with animation and validate the form</li>
+                </ol><br><br>
+            </li>
+            <li><h2><u>RFID Based Attendance System Network Topology</u></h2>
+                <ul><li><p1># This is the simple network topology designed to run this project  over a Local Area Network. The Project Device and Computer server are connected to the same network through WiFi. </p1><br><br>
+                <img id="img"  class="images" src="Images/RFID based-Attenance-System-Network-Topology.jpg" height="400px"><br><br>
+                <li class="list1" type="square"><center><i><u>RFID Based Attendance System Network Topology</u></i></center></li>
+                <br><br>
+                <li><p1># Now before getting started with this project, let’s learn What is RFID? with its specifications and Features.</p1><br><br>
+            </li>
+        </ul>
+            <li><h2><u>RFID RC522 Module</u></h2>
+                <h3><i> What is RFID RC522 Module?</i></h3>
+                <ul><li><p1># At first, let’s learn a little bit about RFID. RFID is the short form of Radio Frequency Identification. RFID modules use electromagnetic fields for transferring data between the card and the reader. Different RFID tags are attached to objects like Keychain, cards, etc. and whenever we place that object in front of the RFID reader, the reader reads that tags. The next benefit of RFID is that it doesn’t require to be in a straight line to get detected. Unlike a barcode, in RFID there’s no such restriction. So, here are some features of RFID RC522.</p1><br><br>
+                <img id="img"  class="images" src="Images/Interface-RFID-to-PHP-MySQL-Database-with-NodeMcu-ESP8266.png"  height="400px" ><br><br>
+                <li class="list1" type="square"><i><u><center> RFID MF-RC522 Module </center></u></i></li>
+
+                <h3><i><u>Features</u></i></h3>
+                    <li class="list2">– Module Name: MF522-ED</li>
+                    <li class="list2">– Working current：13—26mA/ DC 3.3V</li>
+                    <li class="list2">– Standby current：10-13mA/DC 3.3V</li>
+                    <li class="list2">– Sleeping current：<80uA</li>
+                    <li class="list2">– Peak current：<30mA</li>
+                    <li class="list2">– Working frequency：13.56MHz</li>
+                    <li class="list2">– Card reading distance ：0～60mm（mifare1 card）</li>
+                    <li class="list2">– Protocol：SPI</li>
+                    <li class="list2">– Data communication speed：Maximum 10Mbit/s</li>
+                    <li class="list2">– Card types supported：mifare1 S50、mifare1 S70、 Mifare UltraLight、mifare Pro、 Mifare Desfire</li>
+                    <li class="list2">– Dimension：40mm×60mm</li>
+                    <li class="list2">– Working temperature：-20—80 degree</li>
+                    <li class="list2">– Storage temperature：-40—85 degree</li>
+                    <li class="list2">– Humidity：relevant humidity 5%—95%</li>
+                    <li class="list2">– Max SPI speed: 10Mbit/s</li>
+                <br><br>
+            </li>
+            <li><h2><u>Specifications & Pin Details</u></h2>
+                <li><p1># The simple specifications of RC522 module from left to right first pins are as follows:</p1></li><br><br>
+                <br><br>
+                        <li class="list2">Pin Name Details</li>
+                        <li class="list2">1. 3.3V +3.3V Power Supply</li>
+                        <li class="list2">2. RST Reset</li>
+                        <li class="list2">3. GND Ground Pin</li>
+                        <li class="list2">4. IRO Not Connected</li>
+                        <li class="list2">5. MISO Serial Communication</li>
+                        <li class="list2">6. MOSI Serial Communication</li>
+                        <li class="list2">7. SCK TX/RX with ESP8266</li>
+                        <li class="list2">8. SDA TX/RX with ESP8266</li><br><br>
+            <img id="img"  class="images" src="Images/Connect-RFID-to-PHP-MySQL-Database-with-NodeMcu-ESP8266.jpg" height="400px"><br><br>
+            <i><li class="list1" type="square"><u><i> <center> NodeMcu ESP8266 ESP8266 Pinouts </center></i></u>  
+            </li>
+            <li><h2><u>Interfacing RFID RC522 with NodeMcu ESP8266 Module</u></h2></li>
+            <h3>
+                <i>D2 <———-> SDA/SS</i><br>
+                <i>D5 <———-> SCK</i><br>
+                <i>D7 <———-> MOSI</i><br>
+                <i>D6 <———-> MISO</i><br>
+                <i>GND <———-> GND</i><br>
+                <i>D1 <———-> RST</i><br>
+                <i>3V/3V3 <———-> 3.3V</i><br>
+            </h3>
+            <img id="img"  class="images" src="Images/interfacing.png" height="400px"><br><br>
+            <center><i><ul><li class="list1" type="square"><u>Interfacing RFID RC522 with  NodeMcu ESP8266 ESP8266 Module</u></li>
+            </ul></center></i><br><br>
+            <li><h2><u>How to run a server?</u></h2></li>
+                <ul><li><p1># Actually, we can Deploy this PHP Web App on Hosting Server as well. But, you will need Public IP from Your Broadband connections to send data to the hosting server.
+
+                    However, we are using the XAMPP server. It can be used both in Windows and Linux. Basically, Ubuntu users can use LAMP it’s better than XAMPP. But, I am using Windows so I am going to use the XAMPP server. So you can download the XAMPP server from this link.</p1><br><br></li></ul>
+            <li><h2><u>Deploying our PHP Web App</u></h2>
+                <li class="list2">Start your Mysql and Apache from XAMPP Control Panel.</li><br>
+                <img id="img" class="images" src="Images/xampp-server.jpg" height="400px"><br>
+                <li class="list2">Download the PHP web app and the  Arduino IDE Program code.</li>
+                <li class="list2">Download the PHP web app and the  Arduino IDE Program code.</li>
+                <li class="list2">Copy the rfidattendance folder (Main Project folder).</li>
+                <li class="list2">Paste the folder in C:\>xampp/htdocs/ folder.</li><br>
+                <li class="list1" type="square"><u>Now let’s connect the database to the RFID attendance system.</u></li><br>
+                <li class="list2">Open the browser and go to the URL “http://localhost/phpmyadmin/</li>
+                <li class="list2">Then click on the database tab.</li><br>
+                <img id="img"  class="images" src="Images/Database-for-rfidattendance.png" height="400px" ><br>
+                <li class="list2">Create a database name “rfidattendance” and then click on the import tab.</li><br>
+                <img id="img"  class="images" src="Images/create-rfidattendance-database.png" height="400px" ><br>
+                <li class="list2">Click on the browse file and then choose the “rfidattendance.sql” file located inside the rfidattendance folder.</li><br>
+                <img id="img"  class="images" src="Images/select-rfidattendance-sql-file.png" height="400px"><br>
+                <li class="list2">Click on Go</li><br>
+                <li><p1># After creating a database, open a browser and go to the URL “http://localhost/rfidattenddance/”. Now, the admin login panel will be displayed.</p1></li><br>
+                <img id="img"  class="images" src="Images/admin panel.png" height="400px">
+                <li class="list1" type="square"><u><center>Admin Panel Login System</center></u></li><br>
+                <li class="list2">Enter the admin email and password to enter the system.</li>
+                <li class="list2">The default admin credentials is: email= admin@gmail.com, and password= 123.</li>
+            </li>
+            <li><h2><u>Setting Up Arduino IDE for NodeMCU ESP8266</u></h2>
+                <ul><li><p1>-We need to add the esp8266 board to our  Arduino IDE. Open up your IDE then go to “File -> Preferences” or simply hit “Ctrl + comma”.</p1></li></ul>
+                <img id="img"  class="images" src="Images/esp8266-packages-1024x576.jpg" height="400px" >
+                <ul><li><p1>-Paste http://arduino.esp8266.com/stable/package_esp8266com_index.json in additional board manager URLs. </p1></li></ul><br>
+                <ul><li><p1>Go to <b>“Tools -> Board -> Boards Manager”</b> search and install esp8266.</p1></li></ul><br>
+                <img id="img"  class="images" src="Images/esp8266-board-manager-1024x576.jpg" height="400px">
+            </li>    
+            <li><h2><u>Selecting Port and Board</u></h2>
+                <ul><li><p1>- Go to Tools -> Port and select the COM Port of your NodeMCU. If you are not sure what port your NodeMcu is plugged in, go to Device Manager -> Ports (COM & LPT).</p1></li></ul>
+                <img id="img"  class="images" src="Images/selecting-esp8266-board-and-COM-Port-1024x576.jpg" height="400px" ><br>
+                <ul><li><p1>- Now select NodeMcu 1.0 (ESP-12E Module) by clicking Tools -> Board. Scroll down until you find it.</p1></li></ul><br>
+                <ul><li><p1>-Install the MFRC522 library to your  Arduino Libraries folder – Download RFID Library</p1></li></ul><br>
+            </li>    
+            <li><h2><u>Conclusion</u></h2></li>
+            <ul><li><p1>-Finally, we have completed the RFID based Attendance system using NodeMCU with a Website and Database. We hope you found this project useful! Drop a comment below if you have any doubts or queries. We’ll do our best to answer your questions</p1></li></ul><br>
+            </li>    
+        </ul>
+
+        <fieldset>
+        <p1><center><b><i>Made with <p4> &#10084;</p4> by</i></b></center></p1>
+        <p1><center><b><i>Hitesh|Abhay|Gauri|Harshad|Anjali|Soham</i></b></center></p1>/fieldset>
+     </body>
+</html>
